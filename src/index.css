@@ -12,6 +12,10 @@
   text-rendering: optimizeLegibility;
 }
 
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
 
 .App{
   height: 100vh;
@@ -20,9 +24,10 @@
 }
 
 main{
-  border: 1px solid white;
   aspect-ratio: 9/16;
   border-radius: 4px;
+  overflow-y:  scroll;
   max-width:  364px;
   width: 100vw;
+  display: block;
 }
